@@ -30,7 +30,7 @@ Requirements
   
 
 
-  Usage:--
+     Usage:--
 
   Works in linux OS  with python3 installed along with the requirements described above
 
@@ -44,22 +44,22 @@ Requirements
 
   $ sudo pip3 install -r requirements.txt
 
-  $ sudo    ./K1CK3.py
+      $ sudo    ./K1CK3.py
    
           or
    
-   $ sudo python K1CK3.py
+      $ sudo python K1CK3.py
 
 
   
   Developer:- @R.V.R3DDY
 
 
-  Disclaimer:-
+     Disclaimer:-
 
   K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below). It is built for educational purposes only. If you    choose to use it otherwise, the developers will not be held responsible. In brief, do not use it with evil intent.
 
-  License:-
+     License:-
 
   K1CK_them_0UT3 is under the terms of the MIT License, following all clarifications stated in the license file.
 
