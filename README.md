@@ -9,7 +9,10 @@ A tool to kick devices out of your network and enjoy all the bandwidth for yours
 
 ![alt tag](K1CK.png)
 
-Python 2.6, 2.7 users can find the kickthemout @t k4m4/kickthemout(https://nikolaskama.me/kickthemoutproject/)
+
+
+
+Python 2.6, 2.7 users can find the kickthemout @t [k4m4/kickthemout](https://nikolaskama.me/kickthemoutproject/).
 
 
 
@@ -17,11 +20,11 @@ Python 2.6, 2.7 users can find the kickthemout @t k4m4/kickthemout(https://nikol
 
     Requirements:-
 
-     1. Linux OS
+     -. Linux OS
 
-     2. scapy for python3 (aka scapy3k)
+     -. scapy for python3 (aka scapy3k)
 
-     3. python-nmap
+     -. python-nmap
 
 
     Debian Installation
