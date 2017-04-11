@@ -7,75 +7,55 @@ K1CK  devices off your N3TW0RK by performing an ARP Spoof attack with Python3+ c
 A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.
 
 
-
-
-This is fork of k4m4/kickthemout(https://nikolaskama.me/kickthemoutproject/) to make it compatable with Python3+.
-using scapy3k - scapy for python3
+Python 2.6, 2.7 users can find i kickthemout  k4m4/kickthemout(https://nikolaskama.me/kickthemoutproject/)
 
 
 
 
-Requirements:-
 
+    Requirements:-
 
- 1. scapy for python3 (aka scapy3k)
-    
- 2. python-nmap
+     1. Linux OS
+
+     2. scapy for python3 (aka scapy3k)
+        
+     3. python-nmap
  
- Install them with following commands 
- 
-     sudo apt-get install nmap
- 
-     install -r requirments.txt
- 
-         or 
-    
-     pip3 install scapy-python3
-   
-     pip install python-nmap
+
+    Debian Installation
+
+    You can download KickThemOut by cloning the Git Repo and simply installing its requirements:
+
+    $ sudo apt-get update && sudo apt-get install nmap
+
+    $ git clone https://github.com/R3DDY97/KICKthemOUT3.git
+
+    $ cd KICKthemOUT3/
+
+    $ sudo pip3 install -r requirements.txt
+                     or 
+    $ sudo pip3 install scapy-python3 python-nmap
+
+    $ sudo   ./kick3.py
+             or
+    $ sudo python kick3.py
+
+
   
-  
+    Developer:- Dr.R3DDY 
 
+      Disclaimer:-
 
-  Usage:--
+      K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below). It is built for educational purposes only.
+      If you choose to use it otherwise, the developers will not be held responsible. In brief, do not use it with evil intent.
 
-  Works in linux OS  with python3 installed along with the requirements described above
+      License:-
 
-  Should be root user to run K1CK_them_0UT3
-  
+      KICKthem0UT3 is under the terms of the MIT License, following all clarifications stated in the license file.
 
-  Download by cloing git repo 
-  
-
-  $ git clone https://github.com/R3DDY97/K1CK_them_0UT3.git
-
-
-  $ cd K1CK_them_0UT3/
-
-
-  $ sudo pip3 install -r requirements.txt
-  
-
-      $ sudo    ./K1CK3.py
+      Thanks to Nikolaos Kamarinakis & David Schütz.
       
-           or
-          
-      $ sudo python K1CK3.py
-
-
-  
-  Developer:- @R.V.R3DDY
-
-
-  Disclaimer:-
-
-  K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below). It is built for educational purposes only. If you    choose to use it otherwise, the developers will not be held responsible. In brief, do not use it with evil intent.
-
-  License:-
-
-  K1CK_them_0UT3 is under the terms of the MIT License, following all clarifications stated in the license file.
-
-  Credits to Nikolaos Kamarinakis & David Schütz.
+      
 
 
 
