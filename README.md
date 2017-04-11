@@ -6,6 +6,7 @@ K1CK  devices off your N3TW0RK by performing an ARP Spoof attack with Python3+ c
 
 A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.
 
+/home/reddy/Pictures/K1CK.jpeg
 
 
 
@@ -20,9 +21,9 @@ Python 2.6, 2.7 users can find the kickthemout @t k4m4/kickthemout(https://nikol
      1. Linux OS
 
      2. scapy for python3 (aka scapy3k)
-        
+
      3. python-nmap
- 
+
 
     Debian Installation
 
@@ -35,7 +36,7 @@ Python 2.6, 2.7 users can find the kickthemout @t k4m4/kickthemout(https://nikol
     $ cd KICKthemOUT3/
 
     $ sudo pip3 install -r requirements.txt
-                     or 
+                     or
     $ sudo pip3 install scapy-python3 python-nmap
 
     $ sudo   ./kick3.py
@@ -43,8 +44,8 @@ Python 2.6, 2.7 users can find the kickthemout @t k4m4/kickthemout(https://nikol
     $ sudo python kick3.py
 
 
-  
-    Developer:- Dr.R3DDY 
+
+    Developer:- Dr.R3DDY
 
       Disclaimer:-
 
@@ -56,10 +57,3 @@ Python 2.6, 2.7 users can find the kickthemout @t k4m4/kickthemout(https://nikol
       KICKthem0UT3 is under the terms of the MIT License, following all clarifications stated in the license file.
 
       Thanks to Nikolaos Kamarinakis & David Schütz.
-      
-      
-
-
-
-
-
