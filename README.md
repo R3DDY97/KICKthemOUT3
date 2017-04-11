@@ -7,7 +7,7 @@ K1CK  devices off your N3TW0RK by performing an ARP Spoof attack with Python3+ c
 A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.
 
 
-![alt tag](https://cloud.githubusercontent.com/assets/13858661/24928251/71ad730a-1f1f-11e7-9538-4959db483421.png)
+![alt tag](https://cloud.githubusercontent.com/assets/13858661/24928497/3d759850-1f20-11e7-8703-00a704fd269d.png)
 
 It works mainly in Python3 :+1:
 
