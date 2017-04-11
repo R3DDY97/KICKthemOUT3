@@ -7,7 +7,10 @@ K1CK  devices off your N3TW0RK by performing an ARP Spoof attack with Python3+ c
 A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.
 
 
-![alt tag](K1CK.png "Screenshot")
+![alt tag](K1CK.png ,"Screenshot")
+
+It works mainly in Python3 :+1:
+
 
 
 
@@ -17,45 +20,45 @@ Python 2.6, 2.7 users can find the kickthemout @t [k4m4/kickthemout](https://nik
 
 
 
+Requirements:-
 
-    Requirements:-
+- Linux OS
 
-     -. Linux OS
+- scapy for python3 (aka scapy3k)
 
-     -. scapy for python3 (aka scapy3k)
-
-     -. python-nmap
+- python-nmap
 
 
     Debian Installation
 
-    You can download KICKthemOut3 by cloning the Git Repo and simply installing its requirements:
+You can download KICKthemOut3 by cloning the Git Repo and simply installing its requirements:
 
-    $ sudo apt-get update && sudo apt-get install nmap
+$ sudo apt-get update && sudo apt-get install nmap
 
-    $ git clone https://github.com/R3DDY97/KICKthemOUT3.git
+$ git clone https://github.com/R3DDY97/KICKthemOUT3.git
 
-    $ cd KICKthemOUT3/
+$ cd KICKthemOUT3/
 
-    $ sudo pip3 install -r requirements.txt
-                     or
-    $ sudo pip3 install scapy-python3 python-nmap
-
-    $ sudo   ./kick3.py
+$ sudo pip3 install -r requirements.txt
              or
-    $ sudo python kick3.py
+$ sudo pip3 install scapy-python3 python-nmap
+
+$ sudo   ./kick3.py
+     or
+$ sudo python kick3.py
 
 
 
-    Developer:- Dr.R3DDY
+    Developer:- Dr.R3DDY  
+:e-mail: venkyreddy97(at)protonmail.com
 
-      Disclaimer:-
+    Disclaimer:-
 
-      K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below). It is built for educational purposes only.
-      If you choose to use it otherwise, the developers will not be held responsible. In brief, do not use it with evil intent.
+    K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below). It is built for educational purposes only.
+    If you choose to use it otherwise, the developers will not be held responsible. In brief, do not use it with evil intent.
 
-      License:-
+   License:-
 
-      KICKthem0UT3 is under the terms of the MIT License, following all clarifications stated in the license file.
+       KICKthem0UT3 is under the terms of the MIT License, following all clarifications stated in the license file.
 
-      Thanks to Nikolaos Kamarinakis & David Schütz.
+       Thanks to Nikolaos Kamarinakis & David Schütz.
