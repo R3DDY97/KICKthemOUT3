@@ -26,7 +26,7 @@ Python 2.6, 2.7 users can find the kickthemout @t k4m4/kickthemout(https://nikol
 
     Debian Installation
 
-    You can download KickThemOut by cloning the Git Repo and simply installing its requirements:
+    You can download KICKthemOut3 by cloning the Git Repo and simply installing its requirements:
 
     $ sudo apt-get update && sudo apt-get install nmap
 
