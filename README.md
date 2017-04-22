@@ -22,7 +22,7 @@ Python 2.6, 2.7 users can find the kickthemout @t [k4m4/kickthemout](https://nik
 
 **Requirements:-**
 
-- Linux OS
+- Linux OS (Tested in Ubuntu 16.04 LTS x64)
 
 - scapy for python3 (aka scapy3k)
 
