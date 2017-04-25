@@ -28,6 +28,8 @@ Python 2.6, 2.7 users can find the kickthemout @t [k4m4/kickthemout](https://nik
 
 - python-nmap
 
+- requests
+
 
 **Debian Installation**
 
@@ -52,7 +54,7 @@ $ sudo pip3 install scapy-python3   python-nmap
 
 $ sudo   ./kick3.py
 
-     		 or
+         or
       
 $ sudo python kick3.py
 
