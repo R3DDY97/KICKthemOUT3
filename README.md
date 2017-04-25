@@ -40,11 +40,15 @@ $ git clone https://github.com/R3DDY97/KICKthemOUT3.git
 $ cd KICKthemOUT3/
 
 $ sudo pip3 install -r requirements.txt
+
              or
-$ sudo pip3 install scapy-python3 python-nmap
+             
+$ sudo pip3 install scapy-python3   python-nmap
 
 $ sudo   ./kick3.py
-     or
+
+      or
+      
 $ sudo python kick3.py
 
 
