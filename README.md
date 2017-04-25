@@ -67,13 +67,16 @@ $ sudo python kick3.py
 
    **Disclaimer:-**
 
-           K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below). It is built for educational purposes only.
-          If you choose to use it otherwise, the developers will not be held responsible. In brief, dont use it with evil intent.
+     K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below). 
+     It is built for educational purposes only.
+     If you choose to use it otherwise, the developers will not be held responsible. 
+     In brief, dont use it with evil intent.
     
 
  **License:-**
 
-          KICKthem0UT3 is under the terms of the MIT License, following all clarifications stated in the license file.
+   KICKthem0UT3 is under the terms of the MIT License,
+   following all clarifications stated in the license file.
 
 
 **Thanks to Nikolaos Kamarinakis & David Schütz**
