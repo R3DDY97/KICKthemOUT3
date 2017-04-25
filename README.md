@@ -45,14 +45,14 @@ $ cd KICKthemOUT3/
 
 $ sudo pip3 install -r requirements.txt
 
-             or
+          or
              
 $ sudo pip3 install scapy-python3   python-nmap
 
 
 $ sudo   ./kick3.py
 
-      or
+     		 or
       
 $ sudo python kick3.py
 
@@ -74,4 +74,4 @@ $ sudo python kick3.py
  **License:-**
 
     KICKthem0UT3 is under the terms of the MIT License, following all clarifications stated in the license file.
-    **Thanks to Nikolaos Kamarinakis & David Schütz.**
+ 	 **Thanks to Nikolaos Kamarinakis & David Schütz**
