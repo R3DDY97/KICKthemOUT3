@@ -28,57 +28,38 @@ Python 2.6, 2.7 users can find the kickthemout @t [k4m4/kickthemout](https://nik
 
 - python-nmap
 
-- requests
-
 
 **Debian Installation**
 
 You can download KICKthemOut3 by cloning the Git Repo and simply installing its requirements:
 
-
 $ sudo apt-get update && sudo apt-get install nmap
-
 
 $ git clone https://github.com/R3DDY97/KICKthemOUT3.git
 
-
 $ cd KICKthemOUT3/
 
-
 $ sudo pip3 install -r requirements.txt
-
-          or
-             
-$ sudo pip3 install scapy-python3   python-nmap
-
+             or
+$ sudo pip3 install scapy-python3 python-nmap
 
 $ sudo   ./kick3.py
-
-         or
-      
+     or
 $ sudo python kick3.py
 
 
 
   **Developer**:- Dr.R3DDY  
-  
 :e-mail: venkyreddy97@protonmail.com
 
 :email: venkyreddy97@jabber.de
 
-
    **Disclaimer:-**
 
-     K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below).
-     It is built for educational purposes only.
-     If you choose to use it otherwise, the developers will not be held responsible.
-     In brief, dont use it with evil intent.
-    
+    K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below). It is built for educational purposes only.
+    If you choose to use it otherwise, the developers will not be held responsible. In brief, do not use it with evil intent.
 
  **License:-**
 
-    KICKthem0UT3 is under the terms of the MIT License,
-    following all clarifications stated in the license file.
-
-
-**Thanks to Nikolaos Kamarinakis & David Schütz**
+    KICKthem0UT3 is under the terms of the MIT License, following all clarifications stated in the license file.
+    Thanks to Nikolaos Kamarinakis & David Schütz.

@@ -1,3 +1,2 @@
 scapy-python3
 python-nmap
-requests
