@@ -49,11 +49,6 @@ $ sudo python kick3.py
 
 
 
-  **Developer**:- Dr.R3DDY  
-:e-mail: venkyreddy97@protonmail.com
-
-:email: venkyreddy97@jabber.de
-
    **Disclaimer:-**
 
     K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below). It is built for educational purposes only.
