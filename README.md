@@ -60,9 +60,6 @@ $ sudo python kick3.py
 
 
 
-  **Developer**:- Dr.R3DDY  
-
-
    **Disclaimer:-**
 
      K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below).
