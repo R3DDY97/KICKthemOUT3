@@ -61,10 +61,6 @@ $ sudo python kick3.py
 
 
   **Developer**:- Dr.R3DDY  
-  
-:e-mail: venkyreddy97@protonmail.com
-
-:email: venkyreddy97@jabber.de
 
 
    **Disclaimer:-**
