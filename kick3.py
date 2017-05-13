@@ -63,12 +63,12 @@ class K1CK():
 
         try:
             routing = scapy.config.conf.route.routes
-            gateway = scapy.utils.ltoa(routing[3][0])
-            netmask = 32 - int(round(math.log(0xFFFFFFFF - (routing[3][1]), 2)))
+            gateway = scapy.utils.ltoa(routing[-1][0])
+            netmask = 32 - int(round(math.log(0xFFFFFFFF - (routing[-1][1]), 2)))
             self.defaultGatewayIP = routing[1][2]
-            self.defaultInterface = routing[3][3]
+            self.defaultInterface = routing[-1][3]
             self.defaultInterfaceMAC = get_if_hwaddr(self.defaultInterface)
-            self.defaultInterfaceIP = routing[3][4]
+            self.defaultInterfaceIP = routing[-1][4]
             self.GatewayInterface = "{0}/{1}".format(gateway,netmask)
 
 
