@@ -13,10 +13,7 @@ It works mainly in Python3 :+1:
 
 
 
-
-
-Python 2.6, 2.7 users can find the kickthemout @t [k4m4/kickthemout](https://nikolaskama.me/kickthemoutproject/).
-
+This is forked from kickthemout @t [k4m4/kickthemout](https://nikolaskama.me/kickthemoutproject/). which mainly works for Python 2.6, 2.7
 
 
 
