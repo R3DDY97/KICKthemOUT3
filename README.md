@@ -71,4 +71,4 @@ $ sudo python kick3.py
     following all clarifications stated in the license file.
 
 
-**Thanks to Nikolaos Kamarinakis & David Schütz**
+**Thanks and credits to Nikolaos Kamarinakis  & David Schütz**
