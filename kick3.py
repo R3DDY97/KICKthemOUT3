@@ -3,7 +3,7 @@
 import time, os, sys, logging, math
 from datetime import timedelta
 from time import sleep
-import requests
+import requests, ipaddress
 import R_spoof
 BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1;35m', '\033[1;32m', '\033[0m'
 
@@ -63,12 +63,14 @@ class K1CK():
 
         try:
             routing = scapy.config.conf.route.routes
-            gateway = scapy.utils.ltoa(routing[-1][0])
-            netmask = 32 - int(round(math.log(0xFFFFFFFF - (routing[-1][1]), 2)))
             self.defaultGatewayIP = routing[1][2]
-            self.defaultInterface = routing[-1][3]
-            self.defaultInterfaceMAC = get_if_hwaddr(self.defaultInterface)
-            self.defaultInterfaceIP = routing[-1][4]
+            self.defaultInterface = routing[1][3]
+            self.defaultInterfaceIP = routing[1][4]
+            self.defaultInterfaceMAC = get_if_hwaddr(defaultInterface)
+            gateway = ".".join(defaultGatewayIP.split(".")[:-1] + ['0'])
+            for i in routing:
+                if int(ipaddress.IPv4Address(gateway)) in i:
+                    netmask = 32 - int(round(math.log(0xFFFFFFFF - (i[1]), 2)))
             self.GatewayInterface = "{0}/{1}".format(gateway,netmask)
 
 
