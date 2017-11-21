@@ -9,11 +9,10 @@ A tool to kick devices out of your network and enjoy all the bandwidth for yours
 
 ![alt tag](https://cloud.githubusercontent.com/assets/13858661/24928497/3d759850-1f20-11e7-8703-00a704fd269d.png)
 
-It works mainly in Python3 :+1:
+It works in Python 3.1+ 
 
 
-
-This is forked from kickthemout [k4m4/kickthemout](https://nikolaskama.me/kickthemoutproject/). which mainly works for Python 2.6, 2.7
+All credit goes to developers of [k4m4/kickthemout](https://nikolaskama.me/kickthemoutproject/) for  Python 2.6, 2.7
 
 
 
