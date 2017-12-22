@@ -30,27 +30,27 @@ All credit goes to developers of [k4m4/kickthemout](https://nikolaskama.me/kickt
 You can download KICKthemOut3 by cloning the Git Repo and simply installing its requirements:
 
 
-$  `sudo apt-get update && sudo apt-get install nmap`
+  `sudo apt-get update && sudo apt-get install nmap`
 
 
-$ `git clone https://github.com/R3DDY97/KICKthemOUT3.git`
+ `git clone https://github.com/R3DDY97/KICKthemOUT3.git`
 
 
-$ `cd KICKthemOUT3/``
+ `cd KICKthemOUT3/``
 
 
-$ `sudo -H pip3 install -r requirements.txt`
+ `sudo -H pip3 install -r requirements.txt`
 
           or
 
-$ `sudo pip3 install scapy-python3 python-nmap`
+ `sudo pip3 install scapy-python3 python-nmap`
 
 
-$ `sudo   ./kick3.py`
+ `sudo   ./kick3.py`
 
          or
 
-$ `sudo python kick3.py`
+ `sudo python kick3.py`
 
 
 
