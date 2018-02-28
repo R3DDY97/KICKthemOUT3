@@ -92,11 +92,11 @@ def scanNetwork():
     IPlist = nm.all_hosts()
     IPlist.remove(defaultInterfaceIP)
     IPlist.remove(defaultGatewayIP)
-    # try:
-    #     macList = [getmacbyip(ip).upper() for ip in IPlist]
-    # except AttributeError:
-    #     macList = [nm[x]['addresses']['mac'] for x in IPlist]
-    macList = [nm[x]['addresses']['mac'] for x in IPlist]
+    try:
+        macList = [getmacbyip(ip).upper() for ip in IPlist]
+    except AttributeError:
+        macList = [nm[x]['addresses']['mac'] for x in IPlist]
+    # macList = [nm[x]['addresses']['mac'] for x in IPlist]
 
     hostname_list = [nm[x]['hostnames'][0]['name'] for x in IPlist]
     vendorList = [nm[x]['vendor'][m] for x,m in zip(IPlist,macList)]
