@@ -3,6 +3,7 @@
 import time, os, sys, logging, math
 from datetime import timedelta
 from time import sleep
+import requests
 import R_spoof
 BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1;35m', '\033[1;32m', '\033[0m'
 
@@ -57,6 +58,11 @@ def optionBanner():
     sleep(0.2)
     print('\n\t\t{0}[{1}E{2}]{3} Exit K1CK-Them-0UT\n'.format(YELLOW, RED, YELLOW, WHITE))
 
+def vendorMAC(mac):
+    url = " http://api.macvendors.com/{}".format(mac)
+    return requests.get(url).text
+
+
 def net_config():
     global defaultInterface
     global defaultGatewayIP
@@ -99,7 +105,10 @@ def scanNetwork():
     # macList = [nm[x]['addresses']['mac'] for x in IPlist]
 
     hostname_list = [nm[x]['hostnames'][0]['name'] for x in IPlist]
-    vendorList = [nm[x]['vendor'][m] for x,m in zip(IPlist,macList)]
+    try:
+        vendorList = [nm[x]['vendor'][m] for x,m in zip(IPlist,macList)]
+    except:
+        vendorList =[vendorMAC(mac) for mac in macList]
     ip_mac_vendor_hosts = [[i,m,v,h] for i,m,v,h in zip(IPlist,macList,vendorList,hostname_list)]
 
     print('''\n\t{}N3TW0RK scan summary :-\n{}
