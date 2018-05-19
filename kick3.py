@@ -68,8 +68,11 @@ def optionBanner():
 
 
 def vendorMAC(mac):
-    url = " http://api.macvendors.com/{}".format(mac)
-    return requests.get(url).text
+    url = "http://api.macvendors.com/{}".format(mac)
+    response = requests.get(url)
+    if response.ok:
+        return response.text
+    return "NA"
 
 
 def net_config():
