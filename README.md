@@ -18,34 +18,22 @@ All credit goes to developers of [k4m4/kickthemout](https://nikolaskama.me/kickt
 
 **Requirements:-**
 
-- Linux OS (Tested in Ubuntu 16.04 LTS x64)
-
+- Linux OS (Tested in Ubuntu 20.04 LTS x64) /  MAC OSX
 - nmap
+- Python modules -- python-nmap , scapy, requests
 
-- Python modules -- python-nmap , scapy-python3
 
 
 **Debian Installation**
 
 
-
-`sudo apt-get update && sudo apt-get install nmap`
-
-
-`git clone https://github.com/R3DDY97/KICKthemOUT3.git`
-
-
-`cd KICKthemOUT3/`
-
-
- `sudo -H pip3 install -r requirements.txt`
-
-          or
-
-`sudo pip3 install scapy-python3 python-nmap`
-
-
- `sudo   ./kick3.py`
+```
+git clone https://github.com/R3DDY97/KICKthemOUT3.git
+cd KICKthemOUT3/
+sudo -H pip3 install -r requirements.txt
+sudo apt-get update && sudo apt-get install nmap
+sudo   ./kick3.py
+```
 
 
 
@@ -53,7 +41,7 @@ All credit goes to developers of [k4m4/kickthemout](https://nikolaskama.me/kickt
    **Disclaimer:-**
 
      K1CK_them_0UT3 is provided as is under the MIT Licence (as stated below).
-     It is built for educational purposes only.
+     It is built for EDUCATIONAL purposes only.
      If you choose to use it otherwise, the developers will not be held responsible.
      In brief, dont use it with evil intent.
 

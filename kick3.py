@@ -51,8 +51,7 @@ def heading():
 
     """ + END + BLUE +
                      '\n' + '{0}K1CK devices accesing your Wifi  ({1}K1CK TH3M 0UT 3{2}){3}'.format(YELLOW, RED, YELLOW, BLUE).center(98) +
-                     '\n' + 'Made With <3 by: {0}SH3RL0CK ({1}B4TM4N{2}) & {0}W4TS0N ({1}AGN3S{2}){3}'.format(
-                         YELLOW, RED, YELLOW, BLUE).center(111) +
+                     '\n' + 'Made With <3 by: {0}CH1TT1{3}'.format(YELLOW, RED, YELLOW, BLUE).center(111) +
                      '\n' + 'Version: {0}0.2{1}\n'.format(YELLOW, END).center(86))
 
 
