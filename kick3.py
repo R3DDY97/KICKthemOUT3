@@ -232,7 +232,7 @@ def K1CKoneoff():
 
     print("\n\t{0}Target:-  {5}{1} - {6}{3}  -  {7}{4} {2}".format(RED,target_ip, END, target_mac, vendor, WHITE, RED, GREEN))
     print("\n\t {0}SP00FING has started...& Press CTRL+C keys to stop it {1}\n".format(BLUE, END))
-    print("\n \t {1}  K1CK3D {0} - 0UT 0F Wifi{2}\n".format(one_target_ip, RED, END))
+    print("\n \t {1}  K1CK3D {0} - 0UT 0F Wifi{2}\n".format(target_ip, RED, END))
 
     start = time.time()
     try:
