@@ -156,49 +156,6 @@ def print_metadata(scan_stats):
                               WHITE, RED, targets,
                       END))
 
-# def scanNetwork():
-#     # Scanning Network using nmap
-#     nm = nmap.PortScanner()
-#     scanDict = nm.scan(hosts=GatewayInterface, arguments='-sn')
-#     scanstats = nm.scanstats()
-#     elapsed_time = float(scanstats["elapsed"])
-#     uphosts = int(scanstats["uphosts"])
-#     timestr = scanstats["timestr"]
-
-#     IPlist = nm.all_hosts()
-#     IPlist.remove(defaultInterfaceIP)
-#     IPlist.remove(defaultGatewayIP)
-#     try:
-#         macList = [getmacbyip(ip).upper() for ip in IPlist]
-#     except AttributeError:
-#         macList = [nm[x]['addresses']['mac'] for x in IPlist]
-#     except KeyError:
-#         macList = [nm[x]['addresses']['mac'] for x in IPlist]
-
-#     hostname_list = [nm[x]['hostnames'][0]['name'] for x in IPlist]
-#     try:
-#         vendorList = [nm[x]['vendor'][m] for x, m in zip(IPlist, macList)]
-#     except:
-#         pass
-#     try:
-#         vendorList = [vendorMAC(mac) for mac in macList]
-#     except:
-#         print("Not able to find vendor names\n")
-#         vendorList = ["NA"] * len(IPlist)
-#     ip_mac_vendor_hosts = [[i, m, v, h] for i, m, v, h in zip(
-#         IPlist, macList, vendorList, hostname_list)]
-
-#     print('''\n\t{}N3TW0RK scan summary :-\n{}
-#             Scan runtime : {}{}{}
-#             Interface    : {}{}{}
-#             MAC          : {}{}{}
-#             Gateway IP   : {}{}{}
-#             uphosts      : {}{}{}
-#             Target hosts : {}{}{}\n
-#            '''.format(YELLOW, WHITE, RED, elapsed_time, WHITE, RED, defaultInterface, WHITE, RED, defaultGatewayMac, WHITE, RED, defaultGatewayIP, WHITE, RED, uphosts, WHITE, RED, len(IPlist), END))
-#     return ip_mac_vendor_hosts
-
-
 def print_hosts(hosts_list):
     print("{0}\tNo\t{1}IP ADDRESS\t  {2}MAC ADDRESS\t\t{3}VENDOR NAME{4}\n".format(YELLOW, WHITE, RED, GREEN, END))
     for n, host in enumerate(hosts_list, 1):
@@ -220,7 +177,7 @@ def K1CKoneoff():
     while True:
         try:
             choice = int(input("\n\t{0}CH00SE the target:-{1} ".format(WHITE, END))) - 1
-            print("HOST ===", hosts_list)
+            # print("HOST ===", hosts_list)
             target_host = hosts_list[choice]
             target_ip = target_host['ip']
             target_mac =target_host['mac']
@@ -242,7 +199,7 @@ def K1CKoneoff():
             R_spoof.sendPacket(defaultInterfaceMAC, defaultGatewayIP, target_ip, target_mac)
             elapsed = timedelta(seconds=round(time.time() - start))
             print("\r \t {0}ATT4CK DUR4T10N :- {1} seconds{2}".format(YELLOW, elapsed, END), end="")
-            time.sleep(10)
+            time.sleep(5)
     except KeyboardInterrupt:
         return
 
@@ -288,7 +245,7 @@ def K1CKsomeoff():
                 elapsed = timedelta(seconds=round(time.time() - start))
             print(
                 "\r \t {0}ATT4CK DUR4T10N :- {1} seconds{2}".format(YELLOW, elapsed, END), end="")
-            time.sleep(10)
+            time.sleep(5)
     except KeyboardInterrupt:
         return
 
@@ -324,7 +281,7 @@ def K1CKalloff():
             if reScan == 4:
                 reScan = 0
                 scanNetwork()
-            time.sleep(10)
+            time.sleep(5)
     except KeyboardInterrupt:
         return
 
